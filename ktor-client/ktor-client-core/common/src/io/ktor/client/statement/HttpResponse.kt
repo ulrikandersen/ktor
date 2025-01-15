@@ -19,7 +19,7 @@ import kotlinx.io.*
  *
  * Learn more from [Receiving responses](https://ktor.io/docs/response.html).
  */
-public abstract class HttpResponse : HttpMessage, CoroutineScope {
+public interface HttpResponse : HttpMessage, CoroutineScope {
     /**
      * The associated [HttpClientCall] containing both
      * the underlying [HttpClientCall.request] and [HttpClientCall.response].
